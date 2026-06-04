@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-ready"
+version = "0.1.0"
+description = "CLI that scores how ready a repo is for AI coding agents (Claude Code, Cursor, Copilot, Codex)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Harel Asaf" }]
+keywords = ["ai", "agents", "claude-code", "cursor", "copilot", "codex", "cli", "linter", "developer-tools"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+Homepage = "https://github.com/RLASAF12/agent-ready"
+Issues = "https://github.com/RLASAF12/agent-ready/issues"
+
+[project.scripts]
+agent-ready = "agent_ready:main"
+
+[tool.setuptools]
+py-modules = ["agent_ready"]
